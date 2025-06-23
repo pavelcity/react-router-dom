@@ -69,3 +69,19 @@ const Layout = () => {
 
 export default Layout;
 ```
+
+
+### Навигация
+```
+          <nav className="hidden md:flex space-x-8">
+            <NavLink 
+              to="/services" 
+              className={({isActive}) => 
+                isActive 
+                  ? "text-blue-600 font-medium border-b-2 border-blue-600 pb-1" 
+                  : "text-gray-600 hover:text-blue-500 transition-colors"
+              }
+            >
+              Услуги
+            </NavLink>
+```
